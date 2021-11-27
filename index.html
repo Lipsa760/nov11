@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+     function showme(){
+         if(document.querySelector('input').value!=""){
+         if(document.querySelector('input').type=='password'){
+            document.querySelector('input').type='text';
+            document.querySelector('button').innerText="Hide";
+
+         }
+         else{
+            document.querySelector('input').type='password';
+            document.querySelector('button').innerText="Show";
+         }
+        }
+     }
+</script>
+<body>
+    <div id="head"><h1>Login</h1>
+    <div id="bg">
+        <div id="container">
+            <input id="ps" type="password" placeholder="Enter Password Here..." required >
+            <button id ="btn" onClick="showme()">Show</button>
+        </div>
+    </div> 
+</div>
+</body>
+</html>
